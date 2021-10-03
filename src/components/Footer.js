@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { FooterWrapper, FooterSocialWrapper, FooterSocialIcons} from "../elements"
+import { FooterWrapper, FooterSocialWrapper, FooterSocialIcons, P } from "../elements"
 
 export const Footer = () => {
     
@@ -23,8 +23,11 @@ export const Footer = () => {
                     <a href="https://facebook.com" target="_blank" rel="nooepner noreferrer">
                         <img src={data.facebook.publicURL} alt="Facebook Logo" />
                     </a>
+                    <a href="https://intagram.com" target="_blank" rel="nooepner noreferrer">
+                        <img src={data.instagram.publicURL} alt="Instagram Logo" />
+                    </a>
                 </FooterSocialIcons>
-                <p>@2021 Company. All right reserved.</p>
+                <P size="xSmall" color="dark3">COPYRIGHT 2021 Company. All right reserved.</P>
             </FooterSocialWrapper>
         </FooterWrapper>
     )
